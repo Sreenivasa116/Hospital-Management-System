@@ -1,0 +1,38 @@
+# yaml
+server:
+  port: 7896
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hospital_db
+    username: postgres
+    password: sreenu
+
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
+      fail-on-numbers-for-enums: true
+
+    coercion:
+      enabled: true
+      number-input:
+        from-string: FAIL
+      string-input:
+        from-number: FAIL
+
+jpa:
+  hibernate:
+    ddl-auto: update
+  show-sql: true
+  properties:
+    hibernate:
+      format_sql: true
+      default_schema: public
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+
+jwt:
+  secret-key: "SREENIVASAKURABALAKOTA@123456"
