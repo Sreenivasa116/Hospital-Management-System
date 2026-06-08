@@ -1,7 +1,5 @@
 package com.hospital.controller;
 
-
-
 import com.hospital.entity.DoctorAvailability;
 import com.hospital.entity.DoctorProfessionalDetails;
 import com.hospital.requestDto.AddAvailabilityRequest;
@@ -25,6 +23,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/doctors")
 @Validated
+
 public class DoctorController {
 
     private final DoctorService doctorService;
