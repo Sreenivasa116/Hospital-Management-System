@@ -1,7 +1,5 @@
 package com.hospital.controller;
 
-
-
 import com.hospital.entity.DoctorAvailability;
 import com.hospital.entity.DoctorProfessionalDetails;
 import com.hospital.requestDto.AddAvailabilityRequest;
